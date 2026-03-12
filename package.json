@@ -8,13 +8,14 @@
     "start": "next start",
     "panda": "panda codegen",
     "db:generate": "prisma generate",
-    "db:migrate": "prisma migrate dev",
+    "db:migrate": "prisma migrate dev && prisma generate",
     "db:studio": "prisma studio"
   },
   "dependencies": {
     "@libsql/client": "^0.17.0",
     "@prisma/adapter-libsql": "^7.5.0",
     "@prisma/client": "^7.5.0",
+    "@translated/lara": "^1.8.2",
     "next": "16.1.6",
     "react": "19.2.3",
     "react-dom": "19.2.3"
