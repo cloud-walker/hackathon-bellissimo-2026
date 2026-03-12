@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "panda codegen && next dev",
-    "build": "panda codegen && next build",
+    "dev": "panda codegen && prisma generate && prisma migrate deploy && next dev",
+    "build": "panda codegen && prisma generate && next build",
     "start": "next start",
     "panda": "panda codegen",
     "db:generate": "prisma generate",
